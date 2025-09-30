@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: doundu-pod
+  labels:
+        pks: prakash 
+spec:
+  containers:
+  - name: doundu-container
+    image: sonambewafaa/hellodhondhu
+    
+    ports:
+      - containerPort: 80 
+
+
+
+      
