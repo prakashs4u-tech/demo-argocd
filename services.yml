@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-load-balancer
+  name: argocd-nginx
 spec:
+  type: LoadBalancer
   selector:
-    pks: prakash          # ye Pod ke label se match karega
+    app.kubernetes.io/name: argocd-nginx
   ports:
-    - port: 80            # Service port (bahar se access hoga)
-      targetPort: 80      # Pod ke andar ka containerPort
-  type: LoadBalancer       # spelling correct
+  - port: 80
+
+    targetPort: 80
