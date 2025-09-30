@@ -4,9 +4,8 @@ metadata:
   name: service-load-balancer
 spec:
   selector:
-    pks: prakash 
+    pks: prakash          # ye Pod ke label se match karega
   ports:
-  - port: 80
-    targetPort: 80
-  # type: ClusterIP  
-  type: LoadBalancer
+    - port: 80            # Service port (bahar se access hoga)
+      targetPort: 80      # Pod ke andar ka containerPort
+  type: LoadBalancer       # spelling correct
