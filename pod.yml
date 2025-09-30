@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: argocd-nginx-pod
   labels:
-    app.kubernetes.io/name: argocd-nginx
+    pk: argocd-nginx
 spec:
   containers:
   - name: nginx
