@@ -4,6 +4,7 @@ metadata:
   name: argocd-nginx-pod
   labels:
     pk: argocd-nginx
+        pk1: argocd-nginx1
 spec:
   containers:
   - name: nginx
