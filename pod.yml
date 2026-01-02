@@ -3,14 +3,14 @@ kind: Pod
 metadata:
   name: argocd-nginx-pod
   labels:
-    pk: argocd-nginx
-       
+    app: argocd-nginx
 spec:
   containers:
   - name: nginx
     image: nginx:latest
     ports:
-      - containerPort: 80
+    - containerPort: 80
+
 
 
 
